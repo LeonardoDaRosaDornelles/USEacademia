@@ -13,13 +13,9 @@
     --font-Montserrat_light:'Montserrat';
 }
 
-
-
-.inicio{
-    background: url('imagens/Cartaz\ Neon\ Gym.png') center no-repeat;
-    background-size: 100%;
+.inicio img{
     height: 100vh;
-    width: 96vw;
+    width: 100vw;
     margin-bottom: 10px;
 }
 
@@ -35,7 +31,7 @@
     margin: auto;
     width: 90vw;
     color: white;
-    box-shadow: 0 0 10px #F7CA0F, inset 0 0 10px #F7CA0F;
+    box-shadow: 0 0 10px #F7CA0F;
     margin-bottom: 10px;
     background: url('imagens/Story\ Treino\ Academia.png') center no-repeat;
     background-size: cover;
@@ -53,7 +49,7 @@
     text-align:justify;
     font-family: var(--font-Montserrat_light);
     margin: 10px;
-    line-height: 2em;
+    line-height: 1.4em;
 }
 
 
@@ -62,7 +58,8 @@
 */
 
 .horarios {
-    background: url('imagens/bg-horario.png')  center no-repeat;
+    background: url('imagens/bg-horario.png')  center   no-repeat;
+    background-size: cover;
     height: 100vh;
     margin: 10px 0px;
     position: relative;
