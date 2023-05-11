@@ -18,3 +18,18 @@ $('.container-slider').slick({
                 }],
 });
 
+//MENU HAMBURGUER
+
+function clicou(){
+    let burguer = document.querySelector('#burguer')
+    let itens = document.querySelector('#itens')
+    if(itens.style.display == 'block'){
+        burguer.style.left = '75vw'
+        itens.style.display = 'none'
+        
+    }
+    else{
+        itens.style.display = 'block'
+        burguer.style.left = '42vw'
+    }
+}

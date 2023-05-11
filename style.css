@@ -13,7 +13,78 @@
     --font-Montserrat_light:'Montserrat';
 }
 
-header img{
+header{
+    position: relative;
+}
+
+header > menu{
+    position: absolute;
+    left: 60vw;   
+    display: none;
+    height: 350px;
+}
+
+header > #burguer{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 75vw;
+    top: 0;
+    font-size: 60px;
+    color: #F7CA0F;
+}
+
+header > menu > ul{
+    background-color: #F7CA0F;    
+    border: 2px solid #F7CA0F;
+    box-shadow: 0 0 15px #F7CA0F, inset 0 0 15px #F7CA0F;
+    width: 40vw;
+    height: 350px;
+}
+
+header > menu > ul > li{
+    color: black;
+    padding: 10px;
+    margin:10px  10px 10px 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+header > menu > ul > li:hover{
+    background-color: rgb(30,30,30);
+    color: white;
+}
+
+header > menu > ul  a{
+    position: absolute;
+    left: 15%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    padding: 10px 8px;
+    text-decoration: none;
+    background-color: black;
+    color: #F7CA0F;
+    text-align: center;
+    border:3px solid #F7CA0F;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #F7CA0F, inset 0 0 10px #F7CA0F;
+    animation: pulsar 1s  infinite ;
+}
+
+@keyframes pulsar{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+header > #cartaz{
     height: 100vh;
     width: 100vw;
     margin-bottom: 10px;
