@@ -70,7 +70,7 @@ window.addEventListener('resize', mudouTamanho);
 function mudouTamanho(){
     let banner = document.querySelector('#cartaz');
     if(window.innerWidth > 768){
-        banner.setAttribute('src','imagens/Banner_Neon_Gym.png');
+        banner.setAttribute('src','imagens/Banner_Neon_Gym.jpg');
         banner.style.width = ('100vw');
     }
     else{
