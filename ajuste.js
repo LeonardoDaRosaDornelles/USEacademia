@@ -65,14 +65,16 @@ botaoHate.addEventListener('click' , () =>{
 })
 
 //TELA
+window.addEventListener('resize', mudouTamanho);
+
 function mudouTamanho(){
-    let banner = document.querySelector('#cartaz')
+    let banner = document.querySelector('#cartaz');
     if(window.innerWidth > 768){
-        banner.setAttribute('src','imagens/Banner_Neon_Gym.png')
-        banner.Width = ('100vw')
+        banner.setAttribute('src','imagens/Banner_Neon_Gym.png');
+        banner.style.width = ('100vw');
     }
     else{
-        banner.setAttribute('src','imagens/Cartaz_Neon_Gym.png')
-        banner.Width = ('100vw')
+        banner.setAttribute('src','imagens/Cartaz_Neon_Gym.png');
+        banner.style.width = ('100vw');
     }
 }
