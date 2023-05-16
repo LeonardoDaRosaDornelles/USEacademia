@@ -78,3 +78,17 @@ function mudouTamanho(){
         banner.style.width = ('100vw');
     }
 }
+
+window.addEventListener('load', mudouTamanho);
+
+function mudouTamanho(){
+    let banner = document.querySelector('#cartaz');
+    if(window.innerWidth > 768){
+        banner.setAttribute('src','imagens/Banner_Neon_Gym.jpg');
+        banner.style.width = ('100vw');
+    }
+    else{
+        banner.setAttribute('src','imagens/Cartaz_Neon_Gym.png');
+        banner.style.width = ('100vw');
+    }
+}
