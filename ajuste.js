@@ -56,6 +56,14 @@ botaoHora.addEventListener('click' , () =>{
     sectionHora.scrollIntoView({behavior:'smooth'});
 })
 
+//planos
+const botaoPlano = document.querySelector('#planos');
+const sectionPlano = document.querySelector('.planos');
+
+botaoPlano.addEventListener('click' , () =>{
+    sectionPlano.scrollIntoView({behavior:'smooth'});
+})
+
 //depoimentos
 const botaoHate = document.querySelector('#hate');
 const sectionHate = document.querySelector('.depoimentos');

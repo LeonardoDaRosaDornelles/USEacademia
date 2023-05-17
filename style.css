@@ -17,6 +17,24 @@ body{
     overflow-x: hidden;
 }
 
+#zap{
+    position: fixed;
+    bottom: 10px; 
+    right: 10px;
+    z-index: 9999;
+}
+
+#zap img{
+    width: 60px;
+    border: solid 1px #F7CA0F;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+#zap img:active{
+    transform: scale(0.95);
+}
+
 header{
     position: relative;
 }
@@ -77,35 +95,6 @@ header > menu > ul > li{
 header > menu > ul > li:hover{
     background-color: rgb(30,30,30);
     color: white;
-}
-
-header > menu > ul  a{
-    position: absolute;
-    left:20%;
-    top: 60%;
-    text-align: center;
-    transform: translate(-50%,-50%);
-    padding: 10px 8px;
-    text-decoration: none;
-    background-color: black;
-    color: #F7CA0F;
-    text-align: center;
-    border:3px solid #F7CA0F;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #F7CA0F, inset 0 0 10px #F7CA0F;
-    animation: pulsar 1s  infinite ;
-}
-
-@keyframes pulsar{
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
 }
 
 /*
@@ -272,6 +261,91 @@ li.slick-active button{
 .slick-slide:focus { outline: none; }
 
 /*
+---------------------------PLANOS--------------------------
+*/
+
+.planos{
+    background: url('imagens/bg-planos.png') center no-repeat;
+    background-size: 100% 100%;
+    padding: 10px 0;
+    margin:20px auto;
+    display: flex-wrap;
+    width: 90vw;
+    text-align: center;
+}
+
+.planos h1{
+    color: white;
+    font-size: 2em;
+    margin: 15px 0px;
+}
+
+.planos > .container_valor > .valor{
+    margin:30px auto;
+    background-color: #d8d8d8;
+    width: 200px;
+    height: 300px;
+    position: relative;
+}
+
+.planos > .container_valor > .valor > h6{
+    color: #F7CA0F;
+    font-size: 1.3em;
+    position: absolute;
+    left: 13%;
+    top: 85%;
+    border:1px solid        ;
+    padding: 5px;
+}
+
+.planos > .container_valor > .valor > h5{
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.planos > .container_valor > .valor > h4{
+    position: absolute;
+    left: 14%;
+    top: 38%;   
+}
+
+.planos > .container_valor > .valor > h2{
+    font-size: 1.8em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.planos > .container_valor > .valor > p{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+}
+
+.planos > .container_valor >  #dia{
+    border: solid 3px  #fff;
+}
+
+.planos > .container_valor > #mes{
+    color: white;
+    background: black;
+    border: solid 1px  #F7CA0F;
+    box-shadow: 0 0 10px #F7CA0F, inset 0 0 10px #F7CA0F;
+}
+
+.planos .container_valor > #ano{
+    background-image: linear-gradient(45deg,#F7CA0F,#F7CA0F,#F7CA0F, #ffffff1c ,#F7CA0F, #F7CA0F, #F7CA0F );
+    border:3px solid #000;
+}
+
+.planos a {
+    color: #F7CA0F;
+    font-size: 1.3em;
+}
+
+/*
 ---------------------------CTA--------------------------
 */
 
@@ -357,5 +431,14 @@ footer > p{
 
     main > .sobre > p{
         line-height: 2em;
+    }
+
+    .planos{
+        background: url('imagens/Home.jpg') center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .planos > .container_valor{
+        display: flex;
     }
 }
