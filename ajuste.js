@@ -56,6 +56,14 @@ botaoHora.addEventListener('click' , () =>{
     sectionHora.scrollIntoView({behavior:'smooth'});
 })
 
+//depoimentos
+const botaoHate = document.querySelector('#hate');
+const sectionHate = document.querySelector('.depoimentos');
+
+botaoHate.addEventListener('click' , () =>{
+    sectionHate.scrollIntoView({behavior:'smooth'});
+})
+
 //planos
 const botaoPlano = document.querySelector('#planos');
 const sectionPlano = document.querySelector('.planos');
@@ -64,13 +72,14 @@ botaoPlano.addEventListener('click' , () =>{
     sectionPlano.scrollIntoView({behavior:'smooth'});
 })
 
-//depoimentos
-const botaoHate = document.querySelector('#hate');
-const sectionHate = document.querySelector('.depoimentos');
+//fotos
+const botaoFotos = document.querySelector('#fotos');
+const sectionFotos = document.querySelector('.fotos');
 
-botaoHate.addEventListener('click' , () =>{
-    sectionHate.scrollIntoView({behavior:'smooth'});
+botaoFotos.addEventListener('click' , () =>{
+    sectionFotos.scrollIntoView({behavior:'smooth'});
 })
+
 
 //TELA
 window.addEventListener('resize', mudouTamanho);
