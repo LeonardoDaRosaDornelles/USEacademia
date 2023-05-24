@@ -92,6 +92,11 @@ header > menu > ul > li{
     border-radius: 5px;
 }
 
+header > menu > ul > li > a{
+    text-decoration: none;
+}
+
+
 header > menu > ul > li:hover{
     background-color: rgb(30,30,30);
     color: white;
@@ -139,12 +144,10 @@ header > menu > ul > li:hover{
     margin: 10px auto;
     border: 1px solid #F7CA0F;
     box-shadow: 0 0 10px #F7CA0F, inset 0 0 10px #F7CA0F;
-
 }
 
 .sobre > .tour:active{
     transform: scale(0.85);
-
 }
 
 .sobre > .tour > a{
